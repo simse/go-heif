@@ -2444,7 +2444,6 @@ static int decode_coeff_abs_level_greater2(thread_context* tctx,
 }
 
 
-#define MAX_PREFIX 64
 
 static int decode_coeff_abs_level_remaining(thread_context* tctx,
                                             int cRiceParam)

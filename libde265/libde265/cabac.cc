@@ -27,7 +27,7 @@
 #include <assert.h>
 
 #define INITIAL_CABAC_BUFFER_CAPACITY 4096
-
+#define MAX_PREFIX 64
 
 static const uint8_t LPS_table[64][4] =
   {
@@ -414,9 +414,6 @@ int  decode_CABAC_TR_bypass(CABAC_decoder* decoder, int cRiceParam, int cTRMax)
 
   return (prefix << cRiceParam) | suffix;
 }
-
-
-#define MAX_PREFIX 32
 
 int  decode_CABAC_EGk_bypass(CABAC_decoder* decoder, int k)
 {

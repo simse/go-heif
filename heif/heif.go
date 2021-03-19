@@ -24,7 +24,7 @@ package heif
 import (
 	"errors"
 	"fmt"
-	"github.com/jdeng/goheif/heif/bmff"
+	"github.com/simse/go-heif/heif/bmff"
 	"io"
 	"log"
 )
